@@ -4,25 +4,34 @@ import './App.css';
 function App() {
   return (
     <>
-      <h1>Counter App</h1>
-      <CounterApp />
+      <h1>Hello World</h1>
+      <AppHeader/>
+      <AppBody/>
+      <AppFooter/>
     </>
   );
 }
 
-// UserDefineTag
-function CounterApp() {
-  // Member Function
-  let likeMeAction = () => {
-     alert();
-    console.log("I m button click");
-  };
-
-  return (
+function AppHeader(){
+  return(
     <>
-      <input type="button" value="Like Me" onClick={likeMeAction} />
+    <h1>AppHeader</h1>
     </>
   );
+}
+
+function AppBody(){
+  return(
+    <>
+    <h1>App Body</h1></>
+  );
+}
+
+function AppFooter(){
+  return(
+    <>
+    <h1>App Footer</h1></>
+  )
 }
 
 export default App;
