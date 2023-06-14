@@ -1,25 +1,35 @@
 import logo from './logo.svg';
 import "bootstrap/dist/css/bootstrap.css";
-import AppHeader from './pages/AppHeader';
-import AppBody from './pages/AppBody';
-import AppFooter from './pages/AppFooter';
 
-// User Defined Tag: <App />
 function App() {
   return (
     <>
-      <AppHeader />
-      <AppBody />
-      <AppFooter />
+      <h1>Counter App</h1>
+      <CounterApp />
     </>
   );
 }
 
+// UserDefineTag
+function CounterApp() {
+  // Data Member :: Optional
+  let counter = 1;
+  let id = 100;
+  let pi = 3.14;
+  let str = "Hello World";
+  let active = true;
 
+  // Member function :: Optional
+  let likeMeAction = () => {};
+  let dislikeMeAction = () => {};
 
-// User Defined Tag: <AppBody />
-
-// User Defined Tag: <AppFooter />
-
+  // JSX :: VIEW :: USER-INTERFACE :: Required
+  return (
+    <>
+      <h1>{counter}</h1>
+      <input type="button" value="Like Me" />
+    </>
+  );
+}
 
 export default App;
